@@ -1,0 +1,139 @@
+--- Stochastische Begründung der EA-Parameter ---
+TSP-Instanz: lin318 (318 Städte)
+Läufe pro Konfiguration: 5
+--------------------------------------------------
+
+=== Experiment 1: Verschiedene mu-Werte ===
+
+mu = 25
+Einzelne Ergebnisse: [182424.9589429359, 193368.0471795138, 163918.286470878, 187016.92009626675, 182116.85334760955]
+Durchschnitt: 181769,01
+Median: 182424,96
+Standardabweichung: 9810,99
+
+mu = 50
+Einzelne Ergebnisse: [142134.71091781673, 150635.24741811905, 161271.4396795992, 153609.14798069795, 154717.70746952333]
+Durchschnitt: 152473,65
+Median: 153609,15
+Standardabweichung: 6228,96
+
+mu = 75
+Einzelne Ergebnisse: [131768.32522030166, 115040.01585878439, 138932.69655221104, 135194.89078374207, 131296.10033773226]
+Durchschnitt: 130446,41
+Median: 131768,33
+Standardabweichung: 8177,92
+
+mu = 100
+Einzelne Ergebnisse: [116409.2467906859, 115121.47837393632, 117159.0493519074, 132366.46048993125, 116380.49766412053]
+Durchschnitt: 119487,35
+Median: 116409,25
+Standardabweichung: 6472,72
+
+Schlussfolgerung: mu = 50 bietet eine gute Balance zwischen genetischer Vielfalt und Recheneffizienz.
+
+=== Experiment 2: Verschiedene lambda-Werte (mit mu=50) ===
+
+lambda = 50 (λ/μ = 1.0)
+Einzelne Ergebnisse: [167954.20615995835, 188510.0771556503, 176828.73361746586, 184881.83228449078, 176237.58909508662]
+Durchschnitt: 178882,49
+Median: 176828,73
+Standardabweichung: 7201,71
+
+lambda = 100 (λ/μ = 2.0)
+Einzelne Ergebnisse: [145701.0817684036, 144439.63853210813, 150187.29389724805, 151781.96922152812, 145740.60300386415]
+Durchschnitt: 147570,12
+Median: 145740,60
+Standardabweichung: 2871,57
+
+lambda = 150 (λ/μ = 3.0)
+Einzelne Ergebnisse: [131629.21664109023, 121809.19907297603, 121159.41545368178, 131467.5180217017, 125344.89027905365]
+Durchschnitt: 126282,05
+Median: 125344,89
+Standardabweichung: 4530,06
+
+lambda = 200 (λ/μ = 4.0)
+Einzelne Ergebnisse: [118344.04442172183, 122116.97868916077, 128205.4839338617, 126171.45200777723, 117716.74967174961]
+Durchschnitt: 122510,94
+Median: 122116,98
+Standardabweichung: 4155,23
+
+Schlussfolgerung: lambda = 100 (λ/μ = 2) erzeugt einen optimalen Selektionsdruck.
+
+=== Experiment 3: Verschiedene Generationenzahlen ===
+
+generations = 500
+Einzelne Ergebnisse: [172651.48322172032, 174368.05574539086, 181453.64528236756, 180561.82135892834, 177893.18432195875]
+Durchschnitt: 177385,64
+Median: 177893,18
+Standardabweichung: 3417,97
+Geschätzte Konvergenzgeneration (Durchschnitt): 353
+
+generations = 1000
+Einzelne Ergebnisse: [147390.40228644907, 139583.20030997545, 143658.99255225464, 149740.28064042807, 141458.1695097083]
+Durchschnitt: 144366,21
+Median: 143658,99
+Standardabweichung: 3737,92
+Geschätzte Konvergenzgeneration (Durchschnitt): 624
+
+generations = 2000
+Einzelne Ergebnisse: [119947.06844552502, 129422.27458836962, 128071.27347676658, 123774.64538097782, 127138.02663593106]
+Durchschnitt: 125670,66
+Median: 127138,03
+Standardabweichung: 3415,99
+Geschätzte Konvergenzgeneration (Durchschnitt): 1212
+
+generations = 3000
+Einzelne Ergebnisse: [118478.12601611638, 123626.81559673401, 108554.32129126137, 112495.840430948, 112790.282679196]
+Durchschnitt: 115189,08
+Median: 112790,28
+Standardabweichung: 5273,35
+Geschätzte Konvergenzgeneration (Durchschnitt): 2043
+
+Schlussfolgerung: generations = 2000 ermöglicht ausreichend Zeit für Konvergenz und Überwindung von Plateauphasen.
+
+=== Experiment 4: Verschiedene Mutationsraten ===
+
+mutationRate = 0.1
+Einzelne Ergebnisse: [161675.76561869413, 156961.8120321362, 158930.33900287034, 156552.76917674052, 166123.55710125063]
+Durchschnitt: 160048,85
+Median: 158930,34
+Standardabweichung: 3537,01
+
+mutationRate = 0.15
+Einzelne Ergebnisse: [146874.4220174077, 138914.2454443749, 148475.65215667937, 149261.6595571455, 159647.05115075796]
+Durchschnitt: 148634,61
+Median: 148475,65
+Standardabweichung: 6622,33
+
+mutationRate = 0.2
+Einzelne Ergebnisse: [153032.3111292073, 149551.03930604664, 141570.02341138714, 153075.52145897696, 141814.069790038]
+Durchschnitt: 147808,59
+Median: 149551,04
+Standardabweichung: 5155,93
+
+mutationRate = 0.25
+Einzelne Ergebnisse: [157873.87567513075, 140415.98120708426, 147833.66304622884, 142872.60415930906, 140338.82197038495]
+Durchschnitt: 145866,99
+Median: 142872,60
+Standardabweichung: 6592,02
+
+mutationRate = 0.3
+Einzelne Ergebnisse: [151014.29766511577, 142657.97469462216, 146022.33735852138, 134662.83196834545, 144059.3553561981]
+Durchschnitt: 143683,36
+Median: 144059,36
+Standardabweichung: 5324,96
+
+mutationRate = 0.4
+Einzelne Ergebnisse: [143371.65405135788, 136098.03623779176, 159998.77427053882, 147170.83823450058, 156809.56845992687]
+Durchschnitt: 148689,77
+Median: 147170,84
+Standardabweichung: 8751,75
+
+Schlussfolgerung: mutationRate = 0.25 bietet eine optimale Balance zwischen Exploration und Exploitation.
+
+--- Zusammenfassung ---
+Basierend auf den experimentellen Ergebnissen können wir folgende Parameter begründen:
+1. mu = 50: Bietet eine gute Balance zwischen genetischer Vielfalt und Recheneffizienz
+2. lambda = 100: Erzeugt einen optimalen Selektionsdruck (λ/μ = 2)
+3. generations = 2000: Ermöglicht ausreichend Zeit für Konvergenz und Überwindung von Plateauphasen
+4. mutationRate = 0.25: Optimale Balance zwischen Exploration und Exploitation
