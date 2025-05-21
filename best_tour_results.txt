@@ -1,0 +1,27 @@
+--- TSP EA Results ---
+TSP Instance: Random_TSP_50 (50 cities)
+Best Fitness (Total Distance): 683,67
+Best Tour Sequence (0-indexed cities):
+16, 27, 22, 41, 36, 1, 7, 21, 8, 3, 15, 0, 10, 11, 24, 38, 33, 43, 4, 46, 35, 39, 12, 14, 9, 18, 20, 23, 19, 44, 40, 45, 48, 42, 37, 6, 32, 34, 25, 49, 47, 30, 17, 13, 5, 31, 29, 28, 26, 2
+Complete Tour Path:
+Tour: 16 -> 27 -> 22 -> 41 -> 36 -> 1 -> 7 -> 21 -> 8 -> 3 -> 15 -> 0 -> 10 -> 11 -> 24 -> 38 -> 33 -> 43 -> 4 -> 46 -> 35 -> 39 -> 12 -> 14 -> 9 -> 18 -> 20 -> 23 -> 19 -> 44 -> 40 -> 45 -> 48 -> 42 -> 37 -> 6 -> 32 -> 34 -> 25 -> 49 -> 47 -> 30 -> 17 -> 13 -> 5 -> 31 -> 29 -> 28 -> 26 -> 2 -> 16 (Distance: 683,67)
+----------------------
+
+
+
+berlin52:
+
+nur 52 Knoten:
+Liefert schnelle Ergebnisse
+
+Ermöglicht viele Durchläufe mit verschiedenen Parametern
+
+Gut um erste Einstellungen zu finden
+
+lin318:
+
+Ist deutlich mehr Knoten, zeigt also, ob die Parameter auch bei steigender Komplexität funktionieren
+
+Kleine Unterschiede in Parametern führen oft zu großen Unterschieden im Ergebnis
+
+man sieht ob z.B. höhere Mutationsraten oder größere Populationen Vorteile bringen
